@@ -1,6 +1,11 @@
 ﻿/* ALGEMEEN */
 * {
     font-family: 'Segoe UI', 'Georgia', 'Times New Roman';
+    font-size: 20px;
+}
+
+#current_page {
+    text-decoration: underline;
 }
 
 body, div, h1, h3 {
@@ -39,6 +44,7 @@ body, div, h1, h3 {
 }
 
 .login_page #login_button {
+    transition: all 0.5s ease 0s;
     color: #444444;
     box-shadow: 0px 5px 5px 0px rgba(194,194,194,1);
     margin-top: 2%;
@@ -69,4 +75,42 @@ body, div, h1, h3 {
 
 .login_page #ngti_logo {
     height: 140px;
+}
+
+/*NAV BAR*/
+.nav_bar {
+    box-sizing: border-box;
+}
+
+.nav_bar li, .nav_bar a {
+    text-decoration: none;
+}
+
+.nav_bar header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_bar header img {
+    width: 60px;
+    padding: 10px 50px;
+}
+
+.nav_bar ul {
+    list-style: none;
+}
+
+.nav_bar li {
+    display: inline-block;
+}
+
+.nav_bar li a {
+    color: #444444;
+    transition: all 0.5s ease 0s;
+    padding: 0px 10px;
+}
+
+.nav_bar li a:hover {
+    color: #D5BFAA;
 }
